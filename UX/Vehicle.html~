@@ -1,0 +1,108 @@
+<!DOCTYPE html> <html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Transport Automation</title>
+  <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <link rel="stylesheet" href="bootstrap.css"> 
+</head>
+<script src="scripts.js"></script>
+<script>
+	checkLogin();
+</script>
+<body>
+
+
+
+<div class="container">
+	<section id="content">
+		<div ng-app = "loginApp" ng-controller = "loginController">
+
+<form>
+  <fieldset>
+
+   <div class="form-group">
+    <label>Type</label>
+    <select class="custom-select">
+      <option selected="" value="">Select</option>
+      <option value="Double Decker">Double Decker</option>
+      <option value="Single Decker">Single Decker</option>
+      <option value="Mini Bus">Mini Bus</option>
+      <option value="Micro Bus">Micro Bus</option>
+      <option value="Ambulance">Ambulance</option>
+      <option value="Picup">Picup</option>
+    </select>
+  </div>
+
+   <div class="form-group">
+      <label>Device ID</label>
+       <input type="number" placeholder="Device ID" class="form-control" required />
+       </div>
+
+    <div class="form-group">
+      <label>Capacity</label>
+      <input type="number" class="form-control" placeholder="Capacity" required />
+    </div>
+
+<div class="form-group">
+      <label>Maker</label>
+      <input type="text" class="form-control" id="marker" placeholder="Maker" required />
+    </div>
+
+<div class="form-group">
+      <label>Vehicle Number</label>
+      <input type="text" class="form-control" placeholder="Vehicle Number" required />
+    </div>
+
+
+<div class="form-group">
+      <label>Chesis Number</label>
+      <input type="text" class="form-control" placeholder="Chesis Number" required />
+    </div>
+
+<div class="form-group">
+      <label>Engine Number</label>
+      <input type="text" class="form-control" placeholder="Engine Number" required />
+    </div>
+
+<div class="form-group">
+      <label>Make year</label>
+      <input type="date" class="form-control" placeholder="Make Year" required />
+    </div>
+
+<div class="form-group">
+      <label>Fitness Deadline</label>
+      <input type="date" class="form-control" placeholder="Fitness Deadline" required />
+    </div>
+
+<fieldset class="form-group">
+      <legend>AC/Non-AC</legend>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+          AC
+        </label>
+      </div>
+      <div class="form-check">
+      <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+          Non-AC
+      </label>
+    </fieldset>    
+
+<div class="form-group">
+      <label for="exampleInputFile">Image</label>
+      <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+
+         </div>
+    </section>
+</div>
+
+</body>
+
+</html>

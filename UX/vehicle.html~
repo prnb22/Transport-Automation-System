@@ -1,0 +1,139 @@
+<!DOCTYPE html> <html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Transport Automation</title>
+  <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <link rel="stylesheet" href="bootstrap.css"> 
+</head>
+<script src="scripts.js"></script>
+<script>
+	checkLogin();
+</script>
+<body>
+
+   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+        <button type="button" class="btn btn-success">Track</button>
+        <div class="btn-group" role="group">
+        <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop2" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+        <a class="dropdown-link" href="#">Dropdown link</a>
+        <a class="dropdown-link" href="#">Dropdown link</a>
+       </div>
+       </div>
+       </div>
+      </li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="login.html" class = "btn btn-danger"><span class="glyphicon glyphicon-user"></span>logout</a></li>
+    </ul>
+    
+
+  </div>
+</nav>
+
+<div class="container">
+	<section id="content">
+		<div ng-app = "loginApp" ng-controller = "loginController">
+
+<form>
+  <fieldset>
+
+   <div class="form-group">
+    <label>Type</label>
+    <select class="custom-select">
+      <option selected="">Select</option>
+      <option value="Double Decker">Double Decker</option>
+      <option value="Single Decker">Single Decker</option>
+      <option value="Mini Bus">Mini Bus</option>
+      <option value="Micro Bus">Micro Bus</option>
+      <option value="Ambulance">Ambulance</option>
+      <option value="Picup">Picup</option>
+    </select>
+  </div>
+
+   <div class="form-group">
+      <label>Device ID</label>
+       <input type="number" placeholder="Device ID" class="form-control" required />
+       </div>
+
+    <div class="form-group">
+      <label>Capacity</label>
+      <input type="number" class="form-control" placeholder="Capacity" required />
+    </div>
+
+<div class="form-group">
+      <label>Maker</label>
+      <input type="text" class="form-control" id="marker" placeholder="Maker" required />
+    </div>
+
+<div class="form-group">
+      <label>Vehicle Number</label>
+      <input type="text" class="form-control" placeholder="Vehicle Number" required />
+    </div>
+
+
+<div class="form-group">
+      <label>Chesis Number</label>
+      <input type="text" class="form-control" placeholder="Chesis Number" required />
+    </div>
+
+<div class="form-group">
+      <label>Engine Number</label>
+      <input type="text" class="form-control" placeholder="Engine Number" required />
+    </div>
+
+<div class="form-group">
+      <label>Make year</label>
+      <input type="date" class="form-control" placeholder="Make Year" required />
+    </div>
+
+<div class="form-group">
+      <label>Fitness Deadline</label>
+      <input type="date" class="form-control" placeholder="Fitness Deadline" required />
+    </div>
+
+<fieldset class="form-group">
+      <legend>AC/Non-AC</legend>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+          AC
+        </label>
+      </div>
+      <div class="form-check">
+      <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+          Non-AC
+      </label>
+    </fieldset>    
+
+<div class="form-group">
+      <label for="exampleInputFile">Image</label>
+      <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+
+         </div>
+    </section>
+</div>
+
+</body>
+
+</html>
